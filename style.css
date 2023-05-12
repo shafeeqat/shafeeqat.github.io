@@ -1,0 +1,243 @@
+/* comments from wifey
+navbar to be the same, remove underline
+dropdown change bg color when hovering */
+
+/* GENERIC RULE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+    
+body {
+    font-family: 'Avenir', sans-serif;
+    padding: 70px;
+    background-color: black;
+}
+    
+a, a:visited {
+    text-decoration: none;
+    color: rgb(216, 213, 213);
+}
+    
+a:hover {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+li {
+    list-style: none;
+}
+
+.displayPic {
+    width: 250px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+.displayPic:hover {
+    opacity: 1;
+}
+
+/* HEADER */
+
+ul.links {
+    margin: 0;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: solid;
+    outline-color: #25D366;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: white;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+    /* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 15px;
+    }
+
+    div#typing-container {
+        margin-top: 2rem;
+        padding: 0;
+        text-align:justify;
+    }
+
+    div#socialLinks, #socialLinks a:link, #socialLinks a:visited, #socialLinks a:hover {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1rem;
+        margin: 0px;
+    }
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+@media (max-width: 480px) {
+    header, .navbar {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.info {
+    color: white;
+    margin-top: 3rem;
+    padding: 25px 110px 75px;
+    text-align: justify;
+}
+
+.instruction {
+    color:rgb(94, 92, 92);
+    font-family: 'Anonymous Pro';
+    margin-top: 1rem;
+    padding: 25px 110px 75px;
+}
+
+#typing-container {
+    color:white;
+    font-family: 'Anonymous Pro';
+    margin-top: 1rem;
+    padding: 25px 110px 75px;
+}
+
+#socialLinks {
+    padding-top: 30px;
+}
+
+#socialLinks, #socialLinks a:link, #socialLinks a:visited, #socialLinks a:hover {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin: 25px
+}
+
+/* .main-container {
+    min-height: 100vh; 
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    padding-bottom: 100px; 
+} */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #adaaaa;
+    font-size: xx-small;
+}

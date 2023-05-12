@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/213d0dc38c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shafeeq Abdul Talib</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">shafeeqAbdulTalib</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Links</a></li>
+            </ul>
+            <a href="http://wa.me/6587796567/" class="action_btn">Contact     <i class="fa-brands fa-whatsapp"></i></a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="index.html">Links</a></li>
+        </div>
+    </header>
+    <div class="main-container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div style="text-align: center;">
+        <img src="dp.jpg" alt="Shafeeq Abdul Talib" class="displayPic">
+        </div>
+        <div id="typing-container">
+        </div>
+        
+        <div id="socialLinks">
+            <a class="fa-brands fa-instagram" href="https://www.instagram.com/shafeeq.at" target="_blank"></a>
+            <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/shafabdultalib/" target="_blank"></a>
+            <a class="fa-brands fa-github" href="http://udemy.com" target="_blank"></a>
+            <a class="fa-regular fa-envelope" href="mailto:shafeeq.abdul.talib@gmail.com" target="_blank"></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <span>&copy;</span> Shafeeq 2023
+        </footer>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <script src="mainScript.js"></script>
+</body>
+</html>
