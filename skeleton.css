@@ -104,6 +104,7 @@ header {
 .notice {
     color:rgb(142, 138, 138);
     text-align: center;
+    margin-top: 2.5rem;
 }
 
 .blogEntry {
