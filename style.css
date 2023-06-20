@@ -9,6 +9,7 @@ dropdown change bg color when hovering */
     padding: 0;
     box-sizing: border-box;
     background-color: black;
+    background-image: url("img/background-img.jpeg");
 }
     
 body {
