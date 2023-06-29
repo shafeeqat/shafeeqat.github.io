@@ -43,10 +43,14 @@ a, a:visited {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-    
+
+a {
+    transition: font-weight, 0.5s;
+}
+
 a:hover {
     text-decoration: none;
-    color: aquamarine;
+    font-weight: 900;
 }
 
 li {
