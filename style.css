@@ -196,24 +196,14 @@ header.scrolled a {
     div.blogEntry {
         padding-top: 2rem;
     }
+
+    div#socialLinks, #socialLinks a:link, #socialLinks a:visited, #socialLinks a:hover {
+        margin: 0;
+        font-size: xx-small;
+    }
 }
 
 @media (max-width: 768px) {
-
-    div#typing-container {
-        margin-top: 2rem;
-        padding: 25px;
-        text-align:justify;
-    }
-
-    div#socialLinks, #socialLinks a:link, #socialLinks a:visited, #socialLinks a:hover {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        text-align: center;
-        font-size: 1rem;
-        margin: 0px;
-    }
-
     .navbar .links,
     .navbar .action_btn {
         display: none;
@@ -226,10 +216,11 @@ header.scrolled a {
     .dropdown_menu {
         display: block;
     }
-    #blog, #project, #photos {
-        padding: 1.5rem 2px;
-    } 
-    
+
+    div#typing-container {
+        margin-top: 1rem;
+        padding: 25px 25px 75px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -237,19 +228,6 @@ header.scrolled a {
         left: 2rem;
         width: unset;
     }
-    #blog, #project, #photos {
-        padding: 1.5rem 2px;
-    } 
-}
-
-@media (max-width: 480px) {
-    div#socialLinks, #socialLinks a:link, #socialLinks a:visited, #socialLinks a:hover {
-        margin: 0;
-        font-size: xx-small;
-    }
-    #blog, #project, #photos {
-        padding: 1.5rem 2px;
-    } 
 }
 
 .info {
@@ -267,7 +245,7 @@ header.scrolled a {
 }
 
 #typing-container {
-    color:white;
+    color:rgb(16, 16, 16);
     font-family: 'Anonymous Pro';
     margin-top: 1rem;
     padding: 25px 110px 75px;
