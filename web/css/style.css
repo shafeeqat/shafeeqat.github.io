@@ -208,12 +208,20 @@ body, html {
     margin: 0.4vw 2rem 25rem 2rem;
 }
 
+.center-container {
+    display: flex; /* Make the container a flexbox */
+    min-height: 80vh; /* Set minimum height to viewport height */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally (optional) */
+}
+
 .summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: left;
     margin-top: 10vw;
+    gap: 4vw;
 }
 
 .summary-left {
@@ -507,6 +515,31 @@ footer {
     padding-right: 140px;
 }
 
+#stickyArrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's above other elements */
+    display: none; /* Hide initially */
+}
+
+#stickyArrow a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #32edbe9a;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#stickyArrow a:hover {
+    background-color: #0950ba;
+}
+
 @media screen and (max-width: 768px) {
 
     .sidebar.open {
@@ -550,7 +583,7 @@ footer {
     #mainPage {
         margin: 25px 25px 25px 25px;
     }
-    .displayPic {
+    /* .displayPic {
         z-index: 10001;
     }
     .sidebar-wrapper {
@@ -558,7 +591,7 @@ footer {
     }
     .toggle-btn {
         z-index: 90;
-    }
+    } */
     .summary {
         margin-top: 10vh;
     }
