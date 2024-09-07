@@ -23,3 +23,12 @@ menuItems.forEach((item, index) => {
         indicator.style.height = `${itemHeight}px`; // Match the height of the current item
     });
 });
+
+window.addEventListener('scroll', function() {
+    var stickyArrow = document.getElementById('stickyArrow');
+    if (window.scrollY > 200) {
+        stickyArrow.style.display = 'block';
+    } else {
+        stickyArrow.style.display = 'none';
+    }
+});
