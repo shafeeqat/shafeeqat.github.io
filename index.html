@@ -1,108 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/213d0dc38c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/213d0dc38c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="web/css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="web/img/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="web/img/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="web/img/icon/favicon-16x16.png">
-    <link rel="stylesheet" href="web/css/style.css">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shafeeq Abdul Talib</title>
 </head>
 <body>
-    <div>
-        <h1 id="homePage">homePage</h1>
+    <div id="home">
+        <h1 class="firstName">
+            SHAFEEQ
+        </h1>
     </div>
-    <div class="sidebar-wrapper">
-        <div class="sidebar" id="sidebar">
-            <ul>
-                <div class="indicator" id="indicator"></div>
-                <br>
-                <br>
-                <br>
-                <a href="#homePage">
-                    <li><i class="icon"><i class="fa-solid fa-house"></i></i><span id="pageName">Home</span></li>
-                </a>
-                <a href="#about">
-                    <li><i class="icon"><i class="fa-solid fa-address-card"></i></i><span>About</span> </li>
-                </a>
-                <a href="#projects">
-                    <li><i class="icon"><i class="fa-solid fa-list-check"></i></i><span>Projects</span></li>
-                </a>
-                <a href="#photos">
-                    <li><i class="icon"><i class="fa-solid fa-photo-film"></i></i><span>Photos</span></li>
-                </a>
-                <!-- <li><i class="icon"><i class="fa-solid fa-right-from-bracket"></i></i><span>Logout</span></li> -->
+    <h4 class="lastName">
+        ABDUL TALIB
+    </h4>
+    <header> 
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#photos">PHOTOS</a></li>
             </ul>
-        </div>
-        <button class="toggle-btn" id="toggleBtn">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
-    </div>
-    <div id="mainPage">
-        <div id="home">
-
-            <div class="center-container">
-                <div class="summary">
-                    <div class="summary-left">
-                        <h1 class="name">Shafeeq <br> Abdul Talib</h1>
-                        <a class="download-cv-btn" href="web/doc/resume.pdf" download>Download CV</a>
-                        <div id="socialLinks">
-                            <h1>
-                                <a class="fa-brands fa-linkedin social" href="https://www.linkedin.com/in/shafabdultalib/" target="_blank"></a>
-                                <a class="fa-brands fa-github social" href="https://github.com/shafeeqat" target="_blank"></a>
-                            </h1>
-                        </div>
-                    </div>
-                    <img src="web/img/image01.jpg" alt="" class="displayPic">
-                </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
-
-
-            <!-- <div class="summary">
-                <div class="summary-left">
-                    <h1 class="name">Shafeeq <br> Abdul Talib</h1>
-                    <a class="download-cv-btn" href="/doc/resume01.pdf" download>Download CV</a>
-                    <div id="socialLinks">
-                        <h1>
-                            <a class="fa-brands fa-linkedin social" href="https://www.linkedin.com/in/shafabdultalib/" target="_blank"></a>
-                            <a class="fa-brands fa-github social" href="https://github.com/shafeeqat" target="_blank"></a>
-                        </h1>
-                    </div>
-                    
-                </div>
-                <img src="img/image01.jpg" alt="" class="displayPic">
-            </div> -->
         </div>
-        <div id="about">
-            <h1 class="title">About Me</h1>
-            <!-- <div><img src="img/dp_1.jpg" alt="Shafeeq Abdul Talib" class="displayPic"></div> -->
-            <br>
-            <!-- <h2>
-                <p>
-                    Welcome to my website! I'm Shafeeq, a passionate learner and explorer with a diverse background. In the early days of my life, I developed an immense aspiration to be a polyglot. I spent more than 15 years learning the Arabic language including a short spell of nearly half a decade in Egypt, immersing myself in the culture and mastering not only classical Arabic, but also the local Egyptian slang.
-                </p>
-                <br>
-                <p>
-                    My journey into the tech world began in 2018, when I started learning web development sporadically. In 2022, I completed my Master's Degree in Asian Studies before embarking on a career in the tech sector. That was when I decided to give my all and pick up where I left off. Most importantly, my experiences thus far have made me realise that learning to code and understanding the syntax of different programming languages is akin to learning a language and the culture itself. Currently, I am well-versed in the essential frontend languages — namely, HTML5, CSS3 and JavaScript and working my way towards understanding various backend programming languages and databases such as, NodeJS, MongoDB, Mongoose, Python and Java. I have successfully completed a number of projects, showcasing my skills in both frontend and backend development. I am constantly exploring new technologies and learning new skills to stay ahead in the ever-evolving world of software development. I am excited to share my knowledge and experience with you through my website.
-                </p>
-                <br>
-                <p>
-                    Thank you for visiting!
-                </p>
+        <div class="dropdown_menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#photos">PHOTOS</a></li>
+        </div>
+    </header>
+    <div class="mainContainer">
+        <div class="home">
+            <BR></BR>
+            <div style="text-align: center;">
+                <img src="web/img/image01.jpg" alt="Shafeeq Abdul Talib" class="displayPic">
+            </div>
+            <div id="typing-container">
+            </div>
+                
+            <div id="socialLinks">
+                <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/shafabdultalib/" target="_blank"></a>
+                <a class="fa-brands fa-github" href="https://github.com/shafeeqat" target="_blank"></a>
+            </div>
+        </div>
 
-            </h2> -->
-            
+        <div id="about" class="about home-contents">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>
+                ABOUT
+            </h1>
             <p><em>
                 A multilingual professional with a Master's Degree and a strong foundation in technology. Fluent in 5+ languages and proficient in programming, I have recently completed a Specialist Diploma in Cybersecurity Practice. Passionate about safeguarding digital assets, I am eager to leverage my diverse skill set to contribute to a secure digital world. Seeking opportunities to apply my cybersecurity expertise and drive innovative solutions.</em></p>
-            <!-- <br>
-            <div id="typing-container"></div>
-            <br> -->
-
+            <div id="button-container">
+                <a class="cv-email-btn" href="web/doc/resume.pdf" download>Download CV</a>
+                <a class="cv-email-btn" href="mailto:shaf.abdul@outlook.com" download>Email</a>
+            </div>
             <div class="CV-page">
                 <div class="CV-grid">
                     <div class="CV-grid-column">
@@ -172,12 +141,11 @@
                     </div>
                 </div>
             </div>
-            
-
         </div>
-        <div id="projects">
-            <h1 class="title">Projects</h1>
-            <br>
+        <div id="projects" class="projects home-contents">
+            <h1>
+                PROJECTS
+            </h1>
             <div class="imgcontainer">
                 <div id="proj1">
                     <h1><a href="https://github.com/4GuysCoffee/4GuysCoffee.github.io" target="_blank">Website with DB</a></h1>
@@ -193,8 +161,10 @@
                 </div>
             </div>
         </div>
-        <div id="photos">
-            <h1 class="title">Photos</h1>
+        <div id="photos" class="photos home-contents">
+            <h1>
+                PHOTOS
+            </h1>
             <div id="photoContainer">
                 <img src="https://live.staticflickr.com/65535/52653896188_f2101778a7_k.jpg"><img
                 src="https://live.staticflickr.com/65535/52653896213_23c63657a4_k.jpg"><img
@@ -220,17 +190,14 @@
                 src="https://live.staticflickr.com/65535/52652922137_62111832e2_k.jpg"><img
                 src="https://live.staticflickr.com/65535/52653896653_099c2a0a1a_k.jpg">
             </div>
-            
         </div>
-        <div id="stickyArrow">
-            <a href="#homePage"><i class="fa-solid fa-chevron-up"></i></a>
-        </div>
-        <footer>
-            Copyright <span>&copy;</span> Shafeeq 2024 | All Rights Reserved
-        </footer>
     </div>
+    <div id="stickyArrow">
+        <a href="#home"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    <footer>
+        Copyright <span>&copy;</span> Shafeeq 2024 | All Rights Reserved
+    </footer>
     <script src="web/js/script.js"></script>
-    <!-- <script src="js/mainScript.js"></script> -->
-
 </body>
 </html>
