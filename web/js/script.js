@@ -1,28 +1,26 @@
-const sidebar = document.getElementById('sidebar');
-const toggleBtn = document.getElementById('toggleBtn');
-const indicator = document.getElementById('indicator');
-const menuItems = document.querySelectorAll('.sidebar ul li');
+const toggleBtn = document.querySelector('.toggle_btn')
+const toggleBtnIcon = document.querySelector('.toggle_btn i')
+const dropDownMenu = document.querySelector('.dropdown_menu')
 
-// Toggle sidebar open/close
-toggleBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
-    // Adjust button icon based on sidebar state
-    if (sidebar.classList.contains('open')) {
-        toggleBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
-    } else {
-        toggleBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+toggleBtn.onclick = function() {
+    dropDownMenu.classList.toggle('open');
+    const isOpen = dropDownMenu.classList.contains('open');
+
+    toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+}
+
+document.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+
+    if (window.scrollY > 70) {
+                header.classList.add('scrolled');
     }
-});
-
-// Move the indicator line on hover
-menuItems.forEach((item, index) => {
-    item.addEventListener('mouseover', () => {
-        const itemHeight = item.offsetHeight;
-        const offsetTop = item.offsetTop;
-        indicator.style.top = `${offsetTop}px`;
-        indicator.style.height = `${itemHeight}px`; // Match the height of the current item
-    });
-});
+    else {
+                header.classList.remove('scrolled');
+    }
+})
 
 window.addEventListener('scroll', function() {
     var stickyArrow = document.getElementById('stickyArrow');
