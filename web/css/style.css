@@ -40,7 +40,7 @@ ul.links {
     padding: 0px;
 }
 
-.dropdown_menu a, .dropdown_menu li .action_btn:hover, .dropdown_menu li a:visited {
+.dropdown_menu a, .dropdown_menu li .action_btn:hover, .dropdown_menu li a, .dropdown_menu li a:hover, .dropdown_menu li a:visited {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
