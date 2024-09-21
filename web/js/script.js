@@ -14,7 +14,7 @@ toggleBtn.onclick = function() {
 document.addEventListener('scroll', () => {
     const header = document.querySelector('header');
 
-    if (window.scrollY > 70) {
+    if (window.scrollY > 160) {
                 header.classList.add('scrolled');
     }
     else {
